@@ -24,19 +24,19 @@ public class Mathapp {
 
         //Question 3. Area of a circle
         //Declaring Variables
-        double pi = 3.14159;
-        double radius = 7.25;
-        double area = (pi*(radius*2));
+        //Using Math.PI
+        double radius = 7.25; //radius value
+        double area = (Math.PI * Math.pow(radius, 2));
 
         //Display the area of the circle
         System.out.println("3. The area of the circle is: " + area);
 
         //Question 4 Square root of a variable
         //Declare Variables
-        int a = 5;
+        double a = 5; // variable was given
 
         // Display results
-        System.out.println("4. Sqaure root of 5 is: " + Math.sqrt(a));
+        System.out.println("4. Sqaure root of " + a + " is: " + Math.sqrt(a));
 
         //Question 5 Find the distance between two points
         //Declare Variables
@@ -44,7 +44,7 @@ public class Mathapp {
         double x2 = 85;
         double y1 = 10;
         double y2 = 50;
-        double distance = Math.sqrt(Math.pow((x1-x2), 2) + Math.pow((y1-y2), 2));
+        double distance = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 
         //Display
         System.out.println("5. The distance between the two points are: " + distance);
@@ -58,13 +58,7 @@ public class Mathapp {
 
         //7. Random number between 0 - 1
         //declare variables
-
-        int min = 0; // Minimum value of range
-        int max = 1; // Maximum value of range
-
-        // Generate random int value from min to max
-        int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
-        // Printing the generated random numbers
+        double random_int = Math.random();
         System.out.println("7. Random Number between 0 to 1 is: " + random_int);
     }
 }
