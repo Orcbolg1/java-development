@@ -12,30 +12,52 @@ public class BasicCalculator {
 
         // Grab First input
         System.out.println("Enter First Number: ");
-        int input1 = scanner.nextInt();
+        double input1 = scanner.nextDouble();
 
         //Grab second input
         System.out.println("Enter Second Number: ");
-        int input2 = scanner.nextInt();
+        double input2 = scanner.nextDouble();
 
         //Create options for customer to choose arithmetic
         System.out.println("Possible Calculations: \n"+
                 "1. (A)dd\n"+
                 "2. (S)ubtract\n"+
                 "3. (M)ultiply\n"+
-                "4. (D)ivide");
+                "4. (D)ivide\n");
 
         //User will input an option for arithmetic
         System.out.println("Please select and option: ");
         String inputLetter = textScan.nextLine();
 
-        //IF statement that put the first input and second input into a multiplication
+        //IF statement that put the first input and second input into an arithmetic
         if (inputLetter.equals(("M"))) {
-            //Performing Arithmetic
-            //Variable that multiplies 1st and 2nd input
-            int sum = input1 * input2;
+            /*
+            Performing Arithmetic
+            Variable that multiplies 1st and 2nd input
+            */
+            double sum = input1 * input2;
             System.out.println(input1 + " * " + input2 + " = " + sum );
-
+        } else if (inputLetter.equals(("A"))) {
+            /*
+            Performing Arithmetic
+            Variable that add 1st and 2nd input
+             */
+            double sum = input1 + input2;
+            System.out.println(input1 + " + " + input2 + " = " + sum);
+        } else if (inputLetter.equals(("S"))) {
+            /*
+            Performing Arithmetic
+            Variable that subtract 1st and 2nd input
+             */
+            double sum = input1 - input2;
+            System.out.println(input1 + " - " + input2 + " = " + sum);
+        }  else if (inputLetter.equals(("D"))) {
+            /*
+            Performing Arithmetic
+            Variable that divide 1st and 2nd input
+            */
+            double sum = input1 / input2;
+            System.out.println(input1 + " / " + input2 + " = " + sum);
         }
     }
 }
