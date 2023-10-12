@@ -1,13 +1,12 @@
 package com.pluralsight;
 
 public class car {
-
     private String color;
     private int year;
     private String make;
     private String model;
     private double odometer;
-
+    private int speed;
 
     public car(String color, int year, String make, String model, double odometer) {
         this.color = color;
@@ -15,45 +14,72 @@ public class car {
         this.make = make;
         this.model = model;
         this.odometer = odometer;
+        this.speed = 0;
     }
 
-    public String getColor(){
-        return this.color;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public double getOdometer() {
-        return odometer;
+    public String getColor() {
+        return color;
     }
 
     public void setColor(String color) {
         this.color = color;
     }
 
+    public int getYear() {
+        return year;
+    }
+
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public String getMake() {
+        return make;
     }
 
     public void setMake(String make) {
         this.make = make;
     }
 
+    public String getModel() {
+        return model;
+    }
+
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public double getOdometer() {
+        return odometer;
     }
 
     public void setOdometer(double odometer) {
         this.odometer = odometer;
     }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void accelerate(int extraSpeed) {
+        this.speed += extraSpeed; // this.speed = this.speed + extraSpeed
+    }
+
+
+    public void accelerate(){
+
+    }
+
+    public void brake(int minusSpeed) {
+        if (this.speed - minusSpeed > 0) {
+            this.speed -= minusSpeed;
+        } else {
+            this.speed = 0;
+        }
+    }
+
+    public void accelerate(){
+        this.speed += 15;
+    }
+
 }

@@ -52,5 +52,19 @@ public class main {
 
         System.out.println("The title of this book is: " + newBook.getTitle());
 
+
+        oldcar.accelerate(10);
+        oldcar.accelerate(10);
+        System.out.println(oldcar.getSpeed());
+
+        oldcar.brake(30);
+        System.out.println(oldcar.getSpeed());
+
+        oldcar.accelerate(); // += 15
+        System.out.println(oldcar.getSpeed());
+
+        oldcar.accelerate();
+        System.out.println(oldcar.getSpeed());
+
     }
 }

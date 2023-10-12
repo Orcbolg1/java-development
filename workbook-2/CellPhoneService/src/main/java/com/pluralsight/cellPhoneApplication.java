@@ -2,13 +2,23 @@ package com.pluralsight;
 
 public class cellPhoneApplication {
 
-    private long serialnumber = 0;
-    private String model = " ";
-    private String carrier = " ";
-    private String phoneNumber = " ";
-    private String owner = " ";
+    private long serialnumber;
+    private String model;
+    private String carrier;
+    private String phoneNumber;
+    private String owner;
 
 
+
+    public cellPhoneApplication() {
+        this.serialnumber = 0;
+        this.model = " ";
+        this.carrier = " ";
+        this.phoneNumber = " ";
+        this.owner = " ";
+    }
+
+    // overloaded constructor
     public cellPhoneApplication(long serialnumber, String model, String carrier, String phoneNumber, String owner) {
         this.serialnumber = serialnumber;
         this.model = model;
@@ -55,5 +65,13 @@ public class cellPhoneApplication {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    public void dial(String number){
+        System.out.println("\n" + owner + "'s phone is calling " + number);
+    }
+
+    public void dial(cellPhoneApplication newCarrier){
+        System.out.println("\n" + owner + "'s phone is calling " +newCarrier.getPhoneNumber());
     }
 }
