@@ -1,0 +1,8 @@
+As a customer I want to be able to search a product using an ID from a list. Or type in a name and it will produce the product.
+As a customer I want to view a list of product. Then alter this list by price or name.
+As a customer  I want the product to go to my account and my cart. 
+As a owner I want to be able to add a new product to the list I currently have. I must be able to list all parameters when adding to the list.
+As a owner, I want to view a list, in that list it will show the the customer's name and the order list they purchased.
+As a customer, I want to remove a product from my cart.
+As a owner, I want a list of product that in stock. When a customer buys an item i want the stock to be - how many they purchased. Then it will update will real item how many product is left in stock
+As a owner, i want a pre made list of items that I have in stock. When i need to order more. i have access to this list and put in how many i need in stock. Then it will send to the warehouse. 

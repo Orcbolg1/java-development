@@ -10,16 +10,16 @@ if you continue depositing in a certain amount of time with a certain interest r
 
 
 
-![Capture.PNG](..%2F..%2F..%2F..%2FUsers%2Fuser%2FDesktop%2FYearUp%2FPluralSight%2FCapture.PNG)
+![Capture.PNG](imgs%2FCapture.PNG)
 
 
 2. Present Value Calculator Screenshot
 
+![Capture1.PNG](imgs%2FCapture1.PNG)
 
-![Capture1.PNG](..%2F..%2F..%2F..%2FUsers%2Fuser%2FDesktop%2FYearUp%2FPluralSight%2FCapture1.PNG)
 
 
 3. Future Value Screenshot
 
 
-![Capture2.PNG](..%2F..%2F..%2F..%2FUsers%2Fuser%2FDesktop%2FYearUp%2FPluralSight%2FCapture2.PNG)
+![Capture2.PNG](imgs%2FCapture2.PNG)
