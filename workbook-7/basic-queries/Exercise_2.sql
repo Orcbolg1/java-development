@@ -1,3 +1,4 @@
+-- Exercise 2
 -- Question 1
 select *
 FROM northwind.products;
