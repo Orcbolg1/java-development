@@ -30,7 +30,7 @@ where UnitsInStock >= 100
 order by UnitPrice desc, ProductName asc;
 
 -- Question 7
-select ProductName, UnitsInStock, UnitsOnOrder
+select *
 from northwind.products
 Where UnitsInStock = 0 and UnitsOnOrder > 0
 order by ProductName asc;
@@ -41,8 +41,8 @@ From northwind.categories;
 
 -- question 9
 select *
-From northwind.categories
-where CategoryID = 8;
+From northwind.categories;
+
 
 -- Question 10
 select *
