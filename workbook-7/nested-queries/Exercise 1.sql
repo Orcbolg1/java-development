@@ -1,13 +1,13 @@
 -- Nested Exercise
 -- Exercise 1 (find the expensive product)
-select ProductName, UnitPrice
+select ProductName
 FROM northwind.products
 where unitPrice IN (select max(unitPrice) from northwind.products);
 
 -- Exercise 2 (find the orderID, ship name, ship adress using ship via that uses "Federal Shipping")
 select orderID, shipName, shipAddress, ShipVia
 from northwind.orders
-where ShipVia in (select shipperID from northwind.shippers where ShipperID = 3);
+where ShipVia = (select shipperID from northwind.shippers where ShipperID = 3);
 
 -- Exercise 3 (find the order IDs that contain the product Sasquatch Ale)
 select OrderID
